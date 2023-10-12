@@ -38,7 +38,9 @@ namespace MultithreadingApplication
             childThread.Start();
 
             //stop the main thread for some time
-            Thread.Sleep(2000);
+            Thread.Sleep(2500);
+
+            //should show 0,1,2,3
 
             //now abort the child
             Console.WriteLine("In Main: Aborting the Child thread");
